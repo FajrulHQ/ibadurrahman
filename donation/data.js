@@ -13,3 +13,18 @@ let data_donation = [
   },
   { text: 'Rumah Yatim', value: ['Rumah Yatim'], payment: [{ name: 'Mandiri', num: '172-00-0029901-8', img: 'mandiri.png' }, { name: 'BSI', num: '709988', img: 'bsi.png' }] }
 ];
+
+new Vue({
+  el: "#vue-form",
+  data: {
+    donatur_call: 'Sdr',
+    donatur_name: '',
+    donatur_email: '',
+    donatur_phone: '',
+    donation_amount: '',
+    donation_type: '',
+    donation_desc: '',
+    picked: '',
+    donation: data_donation,
+  }
+});

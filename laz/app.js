@@ -58,19 +58,3 @@ new Vue({
     "slide": VueCarousel.Slide
   }
 });
-
-new Vue({
-  el: "#vue-form",
-  data: {
-    donatur_call: 'Sdr',
-    donatur_name: '',
-    donatur_email: '',
-    donatur_phone: '',
-    donation_amount: '',
-    donation_type: '',
-    donation_desc: '',
-    picked: '',
-    donation: data_donation,
-  }
-});
-
