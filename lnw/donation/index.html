@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<title>LNW - Ibadurrahman</title>
+
+	<!-- Additional CSS Files -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css">
+
+	<link rel="stylesheet" href="../../assets/css/main.css">
+
+	<link rel="stylesheet" href="../../assets/css/owl-carousel.css">
+
+	<link rel="stylesheet" href="../../assets/css/lightbox.css">
+
+	<link rel="icon" type="image/png" href="../../assets/images/lnw-logo-small.jpg">
+
+	<style>
+		:root {
+			--main-color: #CC66CC;
+			--main-color-2: rgba(204, 102, 204, .2);
+			--main-color-3: rgba(204, 102, 204, .6);
+		}
+
+		.header-area .main-nav .nav li:hover .label {
+			background-color: #008D40 !important;
+			color: #fff !important;
+			border-color: #008D40;
+		}
+
+		.form-group>label {
+			margin-top: 2vh;
+			font-size: 1.5vh;
+		}
+
+		.form-check>label {
+			width: 90%;
+			padding: 2vh 2vh 0 2vh;
+			border: solid 0.3vh #f4f4f4;
+			font-size: 2vh;
+			line-height: 5vh;
+			margin: 1vh 0;
+			text-align: center;
+		}
+
+		.form-check>label:hover {
+			background-color: var(--main-color-2);
+			border-color: var(--main-color-3);
+			color: var(--main-color);
+		}
+
+		.form-check>input[type="radio"] {
+			display: none;
+		}
+
+		.form-check>input[type="radio"]:checked+label {
+			background-color: var(--main-color-2);
+			border-color: var(--main-color-3);
+			color: var(--main-color);
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+		}
+
+		.modal-dialog {
+			min-width: 150vh;
+		}
+	</style>
+
+</head>
+
+<body class="color-background">
+
+	<!-- ***** Preloader Start ***** -->
+	<div id="preloader">
+		<div class="jumper">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<!-- ***** Preloader End ***** -->
+
+	<!-- ***** Header Area Start ***** -->
+	<header class="header-area header-sticky">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="main-nav">
+						<!-- ***** Logo Start ***** -->
+						<a href="../" class="logo">
+							<img src="../../assets/images/lnw-logo.jpg" alt="laz-ibadurrahman">
+						</a>
+						<!-- ***** Logo End ***** -->
+						<!-- ***** Menu Start ***** -->
+						<ul class="nav">
+							<li class="submenu"><a>Tentang Kami</a>
+								<ul>
+									<li><a href="about/visi-misi/">Visi dan Misi</a></li>
+									<li><a href="about/salam-sapa/">Salam Sapa</a></li>
+									<li><a href="about/struktur-organisasi/">Struktur Organisasi</a></li>
+								</ul>
+							</li>
+							<li><a href="#programs">Program</a></li>
+							<li class="submenu"><a>Layanan</a>
+								<ul>
+									<li><a href="#service">Gerai</a></li>
+									<li><a href="./donation/">Donasi</a></li>
+								</ul>
+							</li>
+							<li><a href="#news">Artikel</a></li>
+							<li><a href="../../laz/" class="label">Zakat</a></li>
+						</ul>
+						<a class='menu-trigger'>
+							<span>Menu</span>
+						</a>
+						<!-- ***** Menu End ***** -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- ***** Header Area End ***** -->
+
+	<!-- ***** Service Area Starts ***** -->
+	<section class="section" id="content">
+		<!--Waves Container-->
+		<div>
+			<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+				<defs>
+					<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+				</defs>
+				<g class="parallax">
+					<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.4)" />
+					<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.3)" />
+					<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.2)" />
+					<use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255,255,255,0.1)" />
+				</g>
+			</svg>
+		</div>
+		<!--Waves end-->
+		<div id="vue-form">
+			<div id="payment" class="me-3 ms-3">
+				<div class="alert alert-success text-center" role="alert">
+					— selamat datang di portal donasi LNW Ibadurrahman, silahkan mengisi form berikut dengan lengkap —
+				</div>
+				<div class="row">
+					<div class="col-md-5">
+						<div class="card card-form border-white shadow-sm m-3 mb-5">
+							<div class="card-body m-3">
+								<h4><span>Donatur</span></h4>
+								<hr>
+								<form id="needs-validation" enctype="multipart/form-data">
+									<div class="form-group">
+										<label for="donatur_call">Sapaan</label>
+										<select v-model="donatur_call" class="form-select" id="donation_type" required>
+											<option>Bpk</option>
+											<option>Ibu</option>
+											<option>Sdr</option>
+										</select>
+									</div>
+
+									<div class="form-group">
+										<label for="donatur_name">Nama Lengkap</label>
+										<input v-model="donatur_name" type="text" class="form-control" id="donatur_name"
+											placeholder="Fajrul Haqqi" required />
+									</div>
+
+									<div class="form-group">
+										<label for="donatur_email">Email</label>
+										<input v-model="donatur_email" type="text" class="form-control" id="donatur_email"
+											placeholder="alamatemail@gmail.com" required />
+									</div>
+
+									<div class="form-group">
+										<label for="donatur_phone">Telepon/HP</label>
+										<input v-model="donatur_phone" type="text" class="form-control" id="donatur_phone"
+											placeholder="0812xxxxxxxx" required />
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="card card-form border-white shadow-sm m-3">
+							<div class="card-body m-3">
+								<h4><span>Pilihan Donasi</span></h4>
+								<hr>
+								<form id="needs-validation" enctype="multipart/form-data">
+									<div class="form-group">
+										<label for="donation_amount">Jumlah</label>
+										<input v-model="donation_amount" type="text" class="form-control" id="donation_amount"
+											placeholder="contoh : 10.000" required />
+									</div>
+
+									<div class="form-group">
+										<label for="donation_type">Jenis Donasi</label>
+										<select v-model="donation_type" class="form-select" id="donation_type" required>
+											<option disabled value="">-- pilih opsi --</option>
+											<option v-for="option in donation" :value="option">{{option.text}}</option>
+										</select>
+									</div>
+
+									<div class="form-group">
+										<label for="donation_desc">Keterangan Donasi</label>
+										<select v-model="donation_desc" class="form-select" id="donation_desc" required>
+											<!-- <option disabled value="">-- pilih opsi --</option> -->
+											<option v-for="item in donation_type.value" :value="item">{{item}}</option>
+										</select>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="card card-form border-white shadow-sm m-3">
+							<div class="card-body m-3">
+								<h4><span>Metode Pembayaran</span></h4>
+								<hr>
+								<form id="needs-validation" enctype="multipart/form-data">
+									<div class="form-group">
+										<label for="donation_bank">Pilihan Bank</label>
+
+										<div class="row">
+											<template v-for="payment in donation_type.payment">
+												<div class="col-lg-6">
+													<div class="form-check" id="transfer">
+														<input class="form-check-input" :value="payment" v-model="picked" type="radio"
+															name="flexRadioDefault" :id="payment.name">
+														<label class="form-check-label" :for="payment.name">
+															<img :src="'../../assets/images/icon/' + payment.img">
+															<!-- {{payment.name}} -->
+														</label>
+													</div>
+												</div>
+											</template>
+
+											<button type="button" id="submitDonation" class="btn btn-outline-success" disabled="disabled"
+												data-toggle="modal" data-target="#paymentModal">Donasi</button>
+
+											<script>
+												$(document).ready(function () {
+													$('#donation_desc').on('option change', function () {
+														if ($(this).val() != '') {
+															$('#submitDonation').prop('disabled', false);
+														} else {
+															$('#submitDonation').prop('disabled', true);
+														}
+													});
+												});
+											</script>
+										</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="paymentModalLabel">Detail Pembayaran</h5>
+					</div>
+					<div class="modal-body">
+						<div class="alert alert-warning" role="alert">
+							{{donatur_call}}. {{donatur_name}} donasi {{donation_type.text}} dapat ditransfer sejumlah <b>Rp.
+								{{donation_amount}}</b> melalui <br><b>Bank
+								{{picked.name}}: {{picked.num}}</b> a.n. LAZ IBADURRAHMAN
+						</div>
+
+						<small>Setelah melakukan pembayaran silahkan salin konfirmasi donasi berikut</small>
+						<hr>
+						<div class="input-group mb-3">
+							<textarea style="height: 35vh; font-size: 11px;" class="form-control" id="copyClipboard"
+								disabled>Assalamualaikum wr.wb &#10;Berikut konfirmasi donasi {{donation_type.text}} dengan rincian donatur sbb.&#10;&#10;Nama		: {{donatur_name}}&#10;Tujuan		: {{donation_desc}}&#10;Email		: {{donatur_email}}&#10;No. HP		: {{donatur_phone}}&#10;Bank		: {{picked.name}}&#10;Nilai Transfer	: Rp. {{donation_amount}}&#10;&#10;Semoga bermanfaat&#10;Wassalamualaikum wr.wb </textarea>
+							<div class="input-group-append">
+								<button style="height: 35vh; border: none;" class="btn btn-outline-secondary" onclick="myFunction()"><i
+										class="fa fa-clipboard"></i></button>
+							</div>
+						</div>
+						<hr>
+						<small>lalu konfirmasi melalui whatsapp dengan melampirkan bukti transfer</small>
+					</div>
+					<div class="modal-footer">
+						<a><button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button></a>
+						<a href="https://wa.me/+6285265531560" target="_blank"><button type="button" class="btn btn-success"><i
+									class="fa fa-whatsapp"></i> Konfirmasi</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- ***** Service Area Ends ***** -->
+
+	<!-- ***** Footer Start ***** -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-xs-12">
+					<div class="right-text-content">
+						<ul class="social-icons">
+							<li><a href="https://web.facebook.com/Lazibadurrahman/?_rdc=1&_rdr"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li><a href="https://www.instagram.com/lazlnwibadurrahman/"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UCmecmMPEBXm96_Q37g8v-TQ/videos"><i
+										class="fa fa-youtube-play"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-xs-12">
+					<div class="left-text-content">
+						<p> All right deserved <br>©2021
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- ***** Whatsapp link Start ***** -->
+	<div class="chat js-chat">
+		<div class="chat__messenger">
+
+			<!-- E-mail -->
+			<a href="#" class="chat__messenger-item">
+				<img src="../../assets/images/chat/email.svg" alt="icon E-mail" class="chat__messenger-icon">
+				<span class="chat__messenger-name">E-mail</span>
+			</a>
+
+			<!-- Messenger -->
+			<a href="#" class="chat__messenger-item" target="_blank" rel="noopener">
+				<img src="../../assets/images/chat/facebook.svg" alt="icon Facebook" class="chat__messenger-icon">
+				<span class="chat__messenger-name">Messenger</span>
+			</a>
+
+			<!-- Instagram -->
+			<a href="https://www.instagram.com/lazlnwibadurrahman/" class="chat__messenger-item" target="_blank"
+				rel="noopener">
+				<img src="../../assets/images/chat/instagram.svg" alt="icon Instagram" class="chat__messenger-icon">
+				<span class="chat__messenger-name">Instagram</span>
+			</a>
+
+			<!-- WhatsApp -->
+			<a href="#" class="chat__messenger-item" target="_blank" rel="noopener">
+				<img src="../../assets/images/chat/whatsapp.svg" alt="icon WhatsApp" class="chat__messenger-icon">
+				<span class="chat__messenger-name">Whatsapp</span>
+			</a>
+		</div>
+		<div class="chat__icon">
+			<img src="../../assets/images/chat/chat.svg" alt="icon live chat is open" class="chat__icon-message">
+			<img src="../../assets/images/chat/cross.svg" alt="icon live chat is closed" class="chat__icon-close">
+		</div>
+	</div>
+	<!-- ***** Whatsapp link Ends ***** -->
+
+	<!-- jQuery -->
+	<script src="../../assets/js/jquery-2.1.0.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="../../assets/js/popper.js"></script>
+	<script src="../../assets/js/bootstrap.min.js"></script>
+
+	<!-- Plugins -->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<script src="../../assets/js/accordions.js"></script>
+	<script src="../../assets/js/datepicker.js"></script>
+	<script src="../../assets/js/scrollreveal.min.js"></script>
+	<script src="../../assets/js/waypoints.min.js"></script>
+	<script src="../../assets/js/jquery.counterup.min.js"></script>
+	<script src="../../assets/js/imgfix.min.js"></script>
+	<script src="../../assets/js/slick.js"></script>
+	<script src="../../assets/js/lightbox.js"></script>
+	<script src="../../assets/js/isotope.js"></script>
+	<script src="https://unpkg.com/vue"></script>
+	<script src="https://unpkg.com/vue-carousel"></script>
+
+	<!-- Global Init -->
+	<script src="../../assets/js/custom.js"></script>
+	<script src="../../data.js"></script>
+	<script src="../app.js"></script>
+</body>
+
+</html>
