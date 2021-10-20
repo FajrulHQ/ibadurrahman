@@ -129,19 +129,15 @@
 					<div class="col-lg-8">
 						<div class="section-heading">
 							<a style="float: right;"><i class="fa fa-calendar"></i> {{item.date}}</a>
-							<a>Ditulis oleh: <a :href="'../../assets/images/article/' + item.author_link">{{item.author}}</a></a>
+							<a>Ditulis oleh: {{item.author}}</a>
 							<img width="100%" :src="'../../../assets/images/article/' + item.img">
 							<br>
-							<p style="float: right;">source: <a href="#">Sumber referensi gambar jika diambil di Internet</a></p>
 							<br><br>
-
+							<!-- custom textarea height -->
 							<textarea class="form-control"
-								style="height: 60vh; background-color: transparent; border-color: transparent; text-align: justify; font-size: 12px; line-height: 200%;"
-								disabled>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a neque vel urna tempus egestas in ut nisl. Donec elementum augue ut risus auctor tincidunt. Fusce egestas a ipsum fermentum auctor. Ut tincidunt tincidunt lorem condimentum auctor. Sed quam dui, porta sed lacinia at, volutpat at magna. Morbi sed ornare purus, quis cursus dolor. Vivamus at velit tincidunt, placerat diam non, accumsan arcu. Sed tellus sapien, ultricies sed efficitur eu, ullamcorper sit amet enim. Etiam facilisis viverra ultrices. Vestibulum accumsan libero in ex tincidunt condimentum. Curabitur in faucibus tellus, in malesuada dui.
-
-	Nulla tellus massa, auctor vel neque eget, faucibus volutpat felis. Cras placerat lobortis diam, nec sodales nunc. Aenean elementum semper lorem, interdum iaculis dolor luctus ac. Curabitur hendrerit, leo ut viverra ultrices, neque ante euismod enim, et elementum erat nibh eget purus. Nulla volutpat purus eget nisl tempor, eu commodo nisl ultricies. Aliquam efficitur, dui in maximus fermentum, nisl risus volutpat purus, in rhoncus lorem diam sed est. Suspendisse eget ullamcorper quam. Vestibulum ultricies blandit nunc, eget dignissim lorem sagittis vel. Etiam non molestie est. Maecenas auctor porttitor mauris, eu aliquet felis convallis quis.
-							</textarea>
+								style="height: 80vh; 
+								background-color: transparent; border-color: transparent; text-align: justify; font-size: 12px; line-height: 200%;"
+								disabled>{{item.content}}</textarea>
 						</div>
 					</div>
 				</template>

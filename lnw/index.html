@@ -45,9 +45,15 @@
 		#banner {
 			position: relative;
 			width: 100%;
-			height: 100vh;
+			height: 100%;
+			min-height: 600px;
+			display: table;
+			text-align: center;
 			background-image: url("../assets/images/intro-bg/landing-page-lnw.jpg");
 			background-size: cover;
+			background-attachment: fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
 		}
 
 		#banner .banner-content {
@@ -171,10 +177,9 @@
 							<tr>
 								<td><img class="img" :src="'../assets/images/article/' + item.img"></td>
 								<td>
-									<h3>{{item.title}}</h3>
+									<h4>{{item.title}}</h4>
 									<p>{{item.highlight}} <a :href="'article/' + item.link">read more..</a></p>
-									<p style="font-size: 11px; float: right;"> {{item.date}} - {{item.type}} ditulis oleh:
-										<a data-toggle="modal" :data-target="item.author_link">{{item.author}}</a>
+									<p style="font-size: 11px; float: right;"> {{item.date}} - {{item.type}} ditulis oleh: {{item.author}}
 									</p>
 								</td>
 								<td class="text-center align-middle"><a :href="'article/' + item.link"><button
@@ -402,43 +407,6 @@
 			</div>
 		</section>
 		<!-- ***** Service Area Ends ***** -->
-
-		<!-- ***** Modal for Author Area Start ***** -->
-		<div class="modal fade" id="andri" tabindex="-1" role="dialog" aria-labelledby="authorModalLabel"
-			aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="authorModalLabel"><span>Andri Roby Sentiyaki</span></h5>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-lg-3 ml-4 mr-2">
-								<img style="border-radius:10%;" src="../assets/images/article/andri.png">
-							</div>
-							<div class="col-lg-8">
-								<p>Lahir : Duri, 28/06/2001</p>
-								<p>Pendidikan : SD-SMA di duri</p>
-								<p>Pengalaman : Pernah kerja serabutan, hingga akhirnya bermanuver ke dunia media, seperti desainer,
-									videografer, broadcaster. Berawal dari hobi pada masa sma saya mulai tertarik menjadikan hobi ini
-									menjadi lebih bermanfaat bagi umat.</p>
-							</div>
-						</div>
-						<hr>
-						<div class="text-center">
-							<a href="https://www.youtube.com/channel/UCUlZb7k8zZrStrxhGP32qSg" class="m-md-5" target="_blank"><i
-									class="fa fa-youtube-play"></i></a>
-							<a href="https://web.facebook.com/andri.sentiyaki" class="m-md-5" target="_blank"><i
-									class="fa fa-facebook"></i></a>
-							<a href="https://www.instagram.com/andri_robsen/" class="m-md-5" target="_blank"><i
-									class="fa fa-instagram"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- ***** Modal for Author Area Ends ***** -->
-
 	</div>
 
 	<!-- ***** Footer Start ***** -->
