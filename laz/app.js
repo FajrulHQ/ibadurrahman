@@ -1,5 +1,18 @@
 let data_article = [
 //   {
+//     id: 2,
+//     type: "Berita",
+//     date: "DD/MM/YYYY",
+//     img: "unknown.png",
+//     link: "bayar-zakat",
+//     title: "Bayar Zakat",
+//     highlight: "ini penjelasan singkat",
+//     author: "Andri",
+//     content: `\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a neque vel urna tempus egestas in ut nisl. Donec elementum augue ut risus auctor tincidunt. Fusce egestas a ipsum fermentum auctor. Ut tincidunt tincidunt lorem condimentum auctor. Sed quam dui, porta sed lacinia at, volutpat at magna. Morbi sed ornare purus, quis cursus dolor. Vivamus at velit tincidunt, placerat diam non, accumsan arcu. Sed tellus sapien, ultricies sed efficitur eu, ullamcorper sit amet enim. Etiam facilisis viverra ultrices. Vestibulum accumsan libero in ex tincidunt condimentum. Curabitur in faucibus tellus, in malesuada dui.
+    
+// \t\tNulla tellus massa, auctor vel neque eget, faucibus volutpat felis. Cras placerat lobortis diam, nec sodales nunc. Aenean elementum semper lorem, interdum iaculis dolor luctus ac. Curabitur hendrerit, leo ut viverra ultrices, neque ante euismod enim, et elementum erat nibh eget purus. Nulla volutpat purus eget nisl tempor, eu commodo nisl ultricies. Aliquam efficitur, dui in maximus fermentum, nisl risus volutpat purus, in rhoncus lorem diam sed est. Suspendisse eget ullamcorper quam. Vestibulum ultricies blandit nunc, eget dignissim lorem sagittis vel. Etiam non molestie est. Maecenas auctor porttitor mauris, eu aliquet felis convallis quis.  
+//     `
+//   },{
 //     id: 1,
 //     type: "Berita",
 //     date: "DD/MM/YYYY",
@@ -9,7 +22,8 @@ let data_article = [
 //     highlight: "ini penjelasan singkat",
 //     author: "Andri",
 //     content: `\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a neque vel urna tempus egestas in ut nisl. Donec elementum augue ut risus auctor tincidunt. Fusce egestas a ipsum fermentum auctor. Ut tincidunt tincidunt lorem condimentum auctor. Sed quam dui, porta sed lacinia at, volutpat at magna. Morbi sed ornare purus, quis cursus dolor. Vivamus at velit tincidunt, placerat diam non, accumsan arcu. Sed tellus sapien, ultricies sed efficitur eu, ullamcorper sit amet enim. Etiam facilisis viverra ultrices. Vestibulum accumsan libero in ex tincidunt condimentum. Curabitur in faucibus tellus, in malesuada dui.
-// \n\t\tNulla tellus massa, auctor vel neque eget, faucibus volutpat felis. Cras placerat lobortis diam, nec sodales nunc. Aenean elementum semper lorem, interdum iaculis dolor luctus ac. Curabitur hendrerit, leo ut viverra ultrices, neque ante euismod enim, et elementum erat nibh eget purus. Nulla volutpat purus eget nisl tempor, eu commodo nisl ultricies. Aliquam efficitur, dui in maximus fermentum, nisl risus volutpat purus, in rhoncus lorem diam sed est. Suspendisse eget ullamcorper quam. Vestibulum ultricies blandit nunc, eget dignissim lorem sagittis vel. Etiam non molestie est. Maecenas auctor porttitor mauris, eu aliquet felis convallis quis.  
+    
+// \t\tNulla tellus massa, auctor vel neque eget, faucibus volutpat felis. Cras placerat lobortis diam, nec sodales nunc. Aenean elementum semper lorem, interdum iaculis dolor luctus ac. Curabitur hendrerit, leo ut viverra ultrices, neque ante euismod enim, et elementum erat nibh eget purus. Nulla volutpat purus eget nisl tempor, eu commodo nisl ultricies. Aliquam efficitur, dui in maximus fermentum, nisl risus volutpat purus, in rhoncus lorem diam sed est. Suspendisse eget ullamcorper quam. Vestibulum ultricies blandit nunc, eget dignissim lorem sagittis vel. Etiam non molestie est. Maecenas auctor porttitor mauris, eu aliquet felis convallis quis.  
 //     `
 //   }
 ]
