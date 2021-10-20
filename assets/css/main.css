@@ -232,6 +232,8 @@ header
 .background-header {
 	background-color: #fff;
 	height: 80px!important;
+	position: fixed!important;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
 	top: 0px;
 	left: 0px;
 	right: 0px;
