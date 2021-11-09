@@ -1,17 +1,30 @@
 let data_article = [
-//   {
-//     id: 1,
-//     type: "Berita",
-//     date: "DD/MM/YYYY",
-//     img: "unknown.png",
-//     link: "layout",
-//     title: "Unknown",
-//     highlight: "ini penjelasan singkat",
-//     author: "Andri",
-//     content: `\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a neque vel urna tempus egestas in ut nisl. Donec elementum augue ut risus auctor tincidunt. Fusce egestas a ipsum fermentum auctor. Ut tincidunt tincidunt lorem condimentum auctor. Sed quam dui, porta sed lacinia at, volutpat at magna. Morbi sed ornare purus, quis cursus dolor. Vivamus at velit tincidunt, placerat diam non, accumsan arcu. Sed tellus sapien, ultricies sed efficitur eu, ullamcorper sit amet enim. Etiam facilisis viverra ultrices. Vestibulum accumsan libero in ex tincidunt condimentum. Curabitur in faucibus tellus, in malesuada dui.
-// \n\t\tNulla tellus massa, auctor vel neque eget, faucibus volutpat felis. Cras placerat lobortis diam, nec sodales nunc. Aenean elementum semper lorem, interdum iaculis dolor luctus ac. Curabitur hendrerit, leo ut viverra ultrices, neque ante euismod enim, et elementum erat nibh eget purus. Nulla volutpat purus eget nisl tempor, eu commodo nisl ultricies. Aliquam efficitur, dui in maximus fermentum, nisl risus volutpat purus, in rhoncus lorem diam sed est. Suspendisse eget ullamcorper quam. Vestibulum ultricies blandit nunc, eget dignissim lorem sagittis vel. Etiam non molestie est. Maecenas auctor porttitor mauris, eu aliquet felis convallis quis.  
-//     `
-//   }
+  {
+    id: 2,
+    type: "Berita",
+    date: "08/10/2021",
+    img: "rakorda-baznas.jpg",
+    link: "rakorda-baznas",
+    title: "LAZ Ibadurrahman mengikuti RAKORDA BAZNAS SE - PROVINSI RIAU",
+    highlight: "Pada tanggal 30 September - 01 Oktober 2021 LAZ Ibadurrahman mengikuti RAKORDA BAZNAS SE - PROVINSI RIAU dengan tema",
+    author: "Andri",
+    content: `\t\tAlhamdulillah… Pada tanggal 30 September - 01 Oktober 2021 LAZ Ibadurrahman mengikuti RAKORDA BAZNAS SE - PROVINSI RIAU dengan tema “Menjadi Lembaga Utama Menyejahterakan Umat”, yang dilaksanakan di Hotel Mutiara Merdeka Pekanbaru. Kegiatan ini dihadiri oleh pimpinan BAZNAS pusat Ahmad Sudrajat dan juga para pimpinan BAZNAS Kabupaten / Kota serta pimpinan LAZNAS / LAZ Kabupaten / Kota. 
+\n\t\tPada kesempatan ini, LAZ Ibadurrahman menyampaikan pelaporan pengelolaan ZIS LAZ Ibadurrahman tahun 2020 sampai dengan 2021. Semoga kedepannya LAZ Ibadurrahman mampu menjadi Lembaga Zakat yang Amanah, Profesional dan Transparan bagi masyarakat.
+    `
+  },
+  {
+    id: 1,
+    type: "Berita",
+    date: "07/10/2021",
+    img: "jumat-berkah.jpg",
+    link: "jumat-berkah",
+    title: "LAZ Ibadurrahman menggelar kegiatan Jumat Berkah",
+    highlight: "Pada hari Jum’at, 01 Oktober 2021 LAZ Ibadurrahman menggelar kegiatan Jumat Berkah di sekitar",
+    author: "Andri",
+    content: `\t\tAlhamdulillah… Pada hari Jum’at, 01 Oktober 2021 LAZ Ibadurrahman menggelar kegiatan Jumat Berkah di sekitar Jalan Mawar dan Jalan Hangtuah. Kegiatan “Jum’at Berkah” ini didukung oleh Muzakki LAZ Ibadurrahman & PIIMAU (Persatuan Ibu-Ibu Masjid Agung Ushuluddin). 
+\n\t\tKegiatan “Jum’at Berkah” merupakan agenda rutin yang senantiasa dilakukan setiap hari Jumat. Dimana LAZ Ibadurrahman menjadi jembatan para Muzakki LAZ Ibadurrahman dalam menebar senyum dhuafa dengan memborong dagangan UMKM,dan membagikannya di sekitar Jalan Mawar dan Jalan Hangtuah. Biaya operasional untuk kegiatan “Jumat Berkah” bersumber dari infak para donatur LAZ Ibadurrahman. Selain memborong UMKM, LAZ Ibadurrahman juga bekerjasama dengan PIIMAU membagikan 100 paket sembako kepada para dhuafa di Kecamatan Mandau, Bathin Solapan dan juga Pinggir.
+    `
+  }
 ]
 
 let data_program = {

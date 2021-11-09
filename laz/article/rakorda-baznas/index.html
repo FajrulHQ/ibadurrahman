@@ -47,7 +47,7 @@
 			<div></div>
 		</div>
 	</div>
-	<!-- ***** Preloader End ***** -->
+	<!-- ***** Preloader End ***** -->	
 
 	<!-- ***** Header Area Start ***** -->
 	<header class="header-area header-sticky">
@@ -111,7 +111,7 @@
 
 		<div id='vue-app' class="container">
 			<div class="row">
-				<template v-for="item in article" v-if="item.id === 1">
+				<template v-for="item in article" v-if="item.id === 2">
 					<!-- setting id -->
 					<div class="col-lg-4 offset-lg-4 text-center">
 						<div class="section-heading">
@@ -129,7 +129,7 @@
 							<br><br>
 							<!-- custom textarea height -->
 							<textarea class="form-control"
-								style="height: 80vh;
+								style="height: 40vh;
 								background-color: transparent; border-color: transparent; text-align: justify; font-size: 12px; line-height: 200%;"
 								disabled>{{item.content}}</textarea>
 						</div>
@@ -142,7 +142,7 @@
 						<hr>
 
 						<ul class="article-list">
-							<template v-for="item in article.slice(0, 4)" v-if="item.id !== 1">
+							<template v-for="item in article.slice(0, 4)" v-if="item.id !== 2">
 								<li>
 									<a v-bind:href="'../'+item.link"><b>{{item.title}}</b></a>
 									<p>{{item.highlight}} </p>
