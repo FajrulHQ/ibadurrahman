@@ -12,7 +12,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
 		rel="stylesheet">
 
-	<title>LNW - Ibadurrahman</title>
+	<title>LAZ - Ibadurrahman</title>
 
 	<!-- Additional CSS Files -->
 	<link rel="stylesheet" type="text/css" href="../../../assets/css/bootstrap.min.css">
@@ -68,12 +68,11 @@
 						<!-- ***** Logo End ***** -->
 						<!-- ***** Menu Start ***** -->
 						<ul class="nav">
-							<li class="submenu">
-								<a>Tentang Kami</a>
+							<li class="submenu"><a>Tentang Kami</a>
 								<ul>
-									<li><a href="../visi-misi/">Visi dan Misi</a></li>
-									<li><a href="../salam-sapa/">Salam Sapa</a></li>
-									<li><a href="../struktur-organisasi/">Struktur Organisasi</a></li>
+									<li><a href="../../about/visi-misi/">Visi dan Misi</a></li>
+									<li><a href="../../about/salam-sapa/">Salam Sapa</a></li>
+									<li><a href="../../about/struktur-organisasi/">Struktur Organisasi</a></li>
 								</ul>
 							</li>
 							<li><a href="../../#programs">Program</a></li>
@@ -116,49 +115,46 @@
 		</div>
 		<!--Waves end-->
 
-		<div class="container">
-
+		<div id='vue-app' class="container">
 			<div class="row">
-				<div class="col-lg-8 offset-lg-2 text-center">
-					<div class="section-heading">
-						<h6>Tentang Kami</h6>
-						<h2>Salam Sapa</h2>
+				<template v-for="item in article" v-if="item.id === 1">
+					<!-- setting id -->
+					<div class="col-lg-8 offset-lg-2 text-center">
+						<div class="section-heading">
+							<h6>Artikel</h6>
+							<h2>{{item.title}}</h2>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-10 offset-lg-1">
+
+					<div class="col-lg-8">
+						<div class="section-heading">
+							<a style="float: right;"><i class="fa fa-calendar"></i> {{item.date}}</a>
+							<a>Ditulis oleh: {{item.author}}</a>
+							<img width="100%" :src="'../../../assets/images/article/' + item.img">
+							<br>
+							<br><br>
+							<!-- custom textarea height -->
+							<textarea class="form-control"
+								style="height: 60vh; 
+								background-color: transparent; border-color: transparent; text-align: justify; font-size: 12px; line-height: 200%;"
+								disabled>{{item.content}}</textarea>
+						</div>
+					</div>
+				</template>
+
+				<div class="col-lg-4">
 					<div class="section-heading">
-						<h6>Salam Sapa Direktur</h6>
-						<p>H. Mahdinur</p>
+						<a>Artikel Terbaru</a>
 						<hr>
 
-						<p><b>Assalamualaikum wr.wb</b></p>
-						<p style="text-indent: 3rem; text-align: justify;">Setelah tiga tahun lebih menjalankan amanah sebagai
-							Direktur Lembaga Nazhir Wakaf Ibadurrahman, saya mencoba belajar tentang kedahsyatan wakaf. Baik melalui
-							diskusi dengan pelaku, penggerak dan pencinta wakaf, maupun mempelajari buku-buku klasik tentang wakaf
-							sampai dengan pengelolaan wakaf kontemporer. Sebut saja penggunaan Block Chain dalam tata kelola
-							perwakafan. Sengaja menggunakan istilah dahsyat untuk menunjukkan faktor keluarbiasaan (extraordinary)
-							tentang wakaf.</p>
-						<p style="text-indent: 3rem; text-align: justify;">Tumbuhnya buudaya wakaf akan menggeser paradigma dalam
-							"menempatkan" harta. Yaitu, dari budaya konsumtif yang sifatnya sesaat dan berjangka pendek menjadi budaya
-							produktif yang berjangka Panjang dalam keabadian. Inilah hakikat pengelolaan asset wakaf, yaitu penciptaan
-							nilai (value creation), produktivitas dan keabadian. Ibarat perusahaan, menggeser belanja operasional
-							(opex) menjadi belanja modal (capex) yang bernilai strategis. Dan cara yang paling efektif membangun
-							budaya adalah membangun ekosistem, kesadaran, dan pembiasaan (habituasi) dalam pelaksanaannya.</p>
-						<p style="text-indent: 3rem; text-align: justify;">Lembaga Nazhir Wakaf Ibadurrahman berusaha menjadi
-							lembaga wakaf yang kredibel dan amanah dalam menjalankan perannya sebagai sebuah lembaga nazhir wakaf,
-							dengan program-program yang telah kita jalankan sampai saat ini. Diantaranya program Pendidikan (Ma'had
-							Maqdis, PAUD Qur'an Maqdis, SDIT Maqdis, SMP IDBS, SMA International Belading dan Ma'had Alqur'an Tahfidz
-							Belading), program ekonomi (Perkebunan sawit dan karet, LNW Tiketting dan Travel, Watung Maqdis, Koperasi
-							Syariah, Catering, Laundry dan Kantin), program sosial (Wakaf Alqur'an dan pembangunan Mushola dan
-							Masjid).</p>
-						<p style="text-indent: 3rem; text-align: justify;">Oleh sebab itu kami menghimbau kepada Bapak dan Ibu para
-							dermawan untuk bisa bergabung menjadi muwaqif LNW Ibadurrahman dengan menghubungi nazhir LNW atau Amil LAZ
-							Ibadurrahman di Jl. Mawar Duri.</p>
-						<p style="text-indent: 3rem; text-align: justify;">Akhirnya, saya ucapkan Jazakumullah Khairan Katsiran
-							keapda seluruh muwaqif yang telah mewakafkan sebagian hartanya kepada LNW Ibadurrahman, semoga menjadi
-							harta yang abadi dan men galir terus pahalaya sampai Yaumil Hisab. Himbauan saya mari terus berwakaf dan
-							mari kita ajak saudara-saudara kita yang belum berwakaf, untuk berwakaf di LNW Ibadurrahman.</p>
-						<p><b>Wassalamu'alaikum wr.wb</b></p>
+						<ul class="article-list">
+							<template v-for="item in article.slice(0, 4)" v-if="item.id !== 1">
+								<li>
+									<a v-bind:href="'../'+item.link"><b>{{item.title}}</b></a>
+									<p>{{item.highlight}} </p>
+								</li>
+							</template>
+						</ul>
 
 					</div>
 				</div>
@@ -210,10 +206,11 @@
 				<span class="chat__messenger-name">Messenger</span>
 			</a>
 
-			<!-- Telegram -->
-			<a href="#" class="chat__messenger-item" target="_blank" rel="noopener">
-				<img src="../../../assets/images/chat/telegram.svg" alt="icon Telegram" class="chat__messenger-icon">
-				<span class="chat__messenger-name">Telegram</span>
+			<!-- Instagram -->
+			<a href="https://www.instagram.com/lazlnwibadurrahman/" class="chat__messenger-item" target="_blank"
+				rel="noopener">
+				<img src="../../../assets/images/chat/instagram.svg" alt="icon Instagram" class="chat__messenger-icon">
+				<span class="chat__messenger-name">Instagram</span>
 			</a>
 
 			<!-- WhatsApp -->
@@ -247,10 +244,12 @@
 	<script src="../../../assets/js/slick.js"></script>
 	<script src="../../../assets/js/lightbox.js"></script>
 	<script src="../../../assets/js/isotope.js"></script>
+	<script src="https://unpkg.com/vue"></script>
+	<script src="https://unpkg.com/vue-carousel"></script>
 
 	<!-- Global Init -->
 	<script src="../../../assets/js/custom.js"></script>
-
+	<script src="../../app.js"></script>
 </body>
 
 </html>
