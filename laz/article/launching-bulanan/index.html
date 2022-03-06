@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<title>LAZ - Ibadurrahman</title>
+
+	<!-- Additional CSS Files -->
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/font-awesome.css">
+
+	<link rel="stylesheet" href="../../../assets/css/main.css">
+
+	<link rel="stylesheet" href="../../../assets/css/owl-carousel.css">
+
+	<link rel="stylesheet" href="../../../assets/css/lightbox.css">
+
+	<link rel="icon" type="image/png" href="../../../assets/images/laz-logo-small.jpg">
+
+	<style>
+		:root {
+			--main-color: #008D40;
+			--main-color-2: rgba(0, 255, 0, .2);
+			--main-color-3: rgba(0, 255, 0, .6);
+		}
+	</style>
+
+</head>
+
+<body class="color-background">
+
+	<!-- ***** Preloader Start ***** -->
+	<div id="preloader">
+		<div class="jumper">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<!-- ***** Preloader End ***** -->
+
+	<!-- ***** Header Area Start ***** -->
+	<header class="header-area header-sticky">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="main-nav">
+						<!-- ***** Logo Start ***** -->
+						<a href="../../../" class="logo">
+							<img src="../../../assets/images/laz-logo.jpg" alt="laz-ibadurrahman">
+						</a>
+						<!-- ***** Logo End ***** -->
+						<!-- ***** Menu Start ***** -->
+						<ul class="nav">
+							<li class="submenu"><a>Tentang Kami</a>
+								<ul>
+									<li><a href="../../about/visi-misi/">Visi dan Misi</a></li>
+									<li><a href="../../about/salam-sapa/">Salam Sapa</a></li>
+									<li><a href="../../about/struktur-organisasi/">Struktur Organisasi</a></li>
+								</ul>
+							</li>
+							<li><a href="../../../#programs">Program</a></li>
+							<li class="submenu"><a>Layanan</a>
+								<ul>
+									<li><a href="../../../#service">Gerai</a></li>
+									<li><a href="https://donasi.ibadurrahman.org">Donasi</a></li>
+								</ul>
+							</li>
+							<li><a href="../../../#news">Artikel</a></li>
+							<li><a href="../../../lnw/" class="label">Wakaf</a></li>
+						</ul>
+						<a class='menu-trigger'>
+							<span>Menu</span>
+						</a>
+						<!-- ***** Menu End ***** -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- ***** Header Area End ***** -->
+
+	<!-- ***** Service Area Starts ***** -->
+	<section class="section" id="content">
+		<!--Waves Container-->
+		<div>
+			<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+				<defs>
+					<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+				</defs>
+				<g class="parallax">
+					<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.4" />
+					<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.3)" />
+					<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.2)" />
+					<use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255,255,255,0.1)" />
+				</g>
+			</svg>
+		</div>
+		<!--Waves end-->
+
+		<div id='vue-app' class="container">
+			<div class="row">
+				<template v-for="item in article" v-if="item.id === 16">
+					<!-- setting id -->
+					<div class="col-lg-8 offset-lg-2 text-center">
+						<div class="section-heading">
+							<h6>Artikel</h6>
+							<h2>{{item.title}}</h2>
+						</div>
+					</div>
+
+					<div class="col-lg-8">
+						<div class="section-heading">
+							<a style="float: right;"><i class="fa fa-calendar"></i> {{item.date}}</a>
+							<a>Ditulis oleh: {{item.author}}</a>
+							<img width="100%" :src="'../../../assets/images/article/' + item.img">
+							<br>
+							<br><br>
+							<!-- custom textarea height -->
+							<textarea class="form-control"
+								style="height: 40vh;
+								background-color: transparent; border-color: transparent; text-align: justify; font-size: 12px; line-height: 200%;"
+								disabled>{{item.content}}</textarea>
+						</div>
+					</div>
+				</template>
+
+				<div class="col-lg-4">
+					<div class="section-heading">
+						<a>Artikel Terbaru</a>
+						<hr>
+
+						<ul class="article-list">
+							<template v-for="item in article.slice(0, 4)" v-if="item.id !== 16">
+								<li>
+									<a v-bind:href="'../'+item.link"><b>{{item.title}}</b></a>
+									<p>{{item.highlight}} </p>
+								</li>
+							</template>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- ***** Service Area Ends ***** 
+
+	<!-- ***** Footer Start ***** -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-xs-12">
+					<div class="right-text-content">
+						<ul class="social-icons">
+							<li><a href="https://web.facebook.com/Lazibadurrahman/?_rdc=1&_rdr"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li><a href="https://www.instagram.com/lazlnwibadurrahman/"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UCmecmMPEBXm96_Q37g8v-TQ/videos"><i
+										class="fa fa-youtube-play"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-xs-12">
+					<div class="left-text-content">
+						<p> All right deserved <br>©2021
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- ***** Whatsapp link Start ***** -->
+	<div class="chat js-chat">
+		<div class="chat__messenger">
+
+			<!-- E-mail -->
+			<a href="#" class="chat__messenger-item">
+				<img src="../../../assets/images/chat/email.svg" alt="icon E-mail" class="chat__messenger-icon">
+				<span class="chat__messenger-name">E-mail</span>
+			</a>
+
+			<!-- Messenger -->
+			<a href="#" class="chat__messenger-item" target="_blank" rel="noopener">
+				<img src="../../../assets/images/chat/facebook.svg" alt="icon Facebook" class="chat__messenger-icon">
+				<span class="chat__messenger-name">Messenger</span>
+			</a>
+
+			<!-- Instagram -->
+			<a href="https://www.instagram.com/lazlnwibadurrahman/" class="chat__messenger-item" target="_blank"
+				rel="noopener">
+				<img src="../../../assets/images/chat/instagram.svg" alt="icon Instagram" class="chat__messenger-icon">
+				<span class="chat__messenger-name">Instagram</span>
+			</a>
+
+			<!-- WhatsApp -->
+			<a href="#" class="chat__messenger-item" target="_blank" rel="noopener">
+				<img src="../../../assets/images/chat/whatsapp.svg" alt="icon WhatsApp" class="chat__messenger-icon">
+				<span class="chat__messenger-name">Whatsapp</span>
+			</a>
+		</div>
+		<div class="chat__icon">
+			<img src="../../../assets/images/chat/chat.svg" alt="icon live chat is open" class="chat__icon-message">
+			<img src="../../../assets/images/chat/cross.svg" alt="icon live chat is closed" class="chat__icon-close">
+		</div>
+	</div>
+	<!-- ***** Whatsapp link Ends ***** -->
+
+	<!-- jQuery -->
+	<script src="../../../assets/js/jquery-2.1.0.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="../../../assets/js/popper.js"></script>
+	<script src="../../../assets/js/bootstrap.min.js"></script>
+
+	<!-- Plugins -->
+	<script src="../../../assets/js/owl-carousel.js"></script>
+	<script src="../../../assets/js/accordions.js"></script>
+	<script src="../../../assets/js/datepicker.js"></script>
+	<script src="../../../assets/js/scrollreveal.min.js"></script>
+	<script src="../../../assets/js/waypoints.min.js"></script>
+	<script src="../../../assets/js/jquery.counterup.min.js"></script>
+	<script src="../../../assets/js/imgfix.min.js"></script>
+	<script src="../../../assets/js/slick.js"></script>
+	<script src="../../../assets/js/lightbox.js"></script>
+	<script src="../../../assets/js/isotope.js"></script>
+	<script src="https://unpkg.com/vue"></script>
+	<script src="https://unpkg.com/vue-carousel"></script>
+
+	<!-- Global Init -->
+	<script src="../../../assets/js/custom.js"></script>
+	<script src="../../app.js"></script>
+</body>
+
+</html>
