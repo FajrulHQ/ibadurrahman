@@ -1,52 +1,17 @@
 let data_article = [
-  {
-    id: 2,
-    type: "Berita",
-    date: "29/09/2021",
-    img: "wakaf-quran.jpg",
-    link: "wakaf-quran",
-    title: "Penyaluran Wakaf Alqur’an",
-    highlight: "Menerima wakaf Al-Qur’an dan buku edukasi Islami untuk disalurkan kepada saudara kita yang membutuhkan.",
-    author: "Andri",
-    content: `Menerima wakaf Al-Qur’an dan buku edukasi Islami untuk disalurkan kepada saudara kita yang membutuhkan.
-
-Bagi sahabat sekalian yang ingin memberikan wakaf Al-Qur’an dan buku nya melalui LAZ LNW Ibadurrahman, bisa langsung datang ke kantor kami yang beralamat di Jalan Mawar No 5, Duri.
-    
-Atau transfer ke nomor rekening:
-
-Mandiri
-172-00-0029896-0
-an. Laz Ibadurrahman - Wakaf
-
-Bank Syariah Indonesia
-7099885593
-an. Laz Ibadurrahman – Wakaf
-
-Informasi lebih lanjut:
-0852-7192-7169
-`
-  },
-  {
-    id: 1,
-    type: "Berita",
-    date: "22/09/2021",
-    img: "wakaf-sauqi.jpg",
-    link: "wakaf-sauqi",
-    title: "Wakaf Sauqi ( Saung qur’an Ibadurrahman )",
-    highlight: "Alhamdulillah telah diterima wakaf rumah yang akan dijadikan sebagai SAUQI (Saung Qur’an) Ibadurrahman yang berlokasi di",
-    author: "Andri",
-    content: `Dari Utsman bin Affan ra., bahwa Rasulullah shallallahu ‘alaihi wa sallam bersabda:
-خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ
-“Sebaik-baik kalian adalah orang yang belajar Al-Qur'an dan mengajarkannya.” (HR. Tirmidzi)
-
-Alhamdulillah telah diterima wakaf rumah yang akan dijadikan sebagai SAUQI (Saung Qur’an) Ibadurrahman yang berlokasi di Perumnas Tahap 3 Jalan Belibis. Agar dapat memberikan fasilitas yang terbaik kami akan mengadakan open donasi. 
-
-Berikut perlengkapan yang dibutuhkan:
--Karpet layak pakai
--Alat-alat dapur
--Perlengkapan sholat
-`
-  }
+//   {
+//     id: 1,
+//     type: "Berita",
+//     date: "DD/MM/YYYY",
+//     img: "unknown.png",
+//     link: "layout",
+//     title: "Unknown",
+//     highlight: "ini penjelasan singkat",
+//     author: "Andri",
+//     content: `\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a neque vel urna tempus egestas in ut nisl. Donec elementum augue ut risus auctor tincidunt. Fusce egestas a ipsum fermentum auctor. Ut tincidunt tincidunt lorem condimentum auctor. Sed quam dui, porta sed lacinia at, volutpat at magna. Morbi sed ornare purus, quis cursus dolor. Vivamus at velit tincidunt, placerat diam non, accumsan arcu. Sed tellus sapien, ultricies sed efficitur eu, ullamcorper sit amet enim. Etiam facilisis viverra ultrices. Vestibulum accumsan libero in ex tincidunt condimentum. Curabitur in faucibus tellus, in malesuada dui.
+// \n\t\tNulla tellus massa, auctor vel neque eget, faucibus volutpat felis. Cras placerat lobortis diam, nec sodales nunc. Aenean elementum semper lorem, interdum iaculis dolor luctus ac. Curabitur hendrerit, leo ut viverra ultrices, neque ante euismod enim, et elementum erat nibh eget purus. Nulla volutpat purus eget nisl tempor, eu commodo nisl ultricies. Aliquam efficitur, dui in maximus fermentum, nisl risus volutpat purus, in rhoncus lorem diam sed est. Suspendisse eget ullamcorper quam. Vestibulum ultricies blandit nunc, eget dignissim lorem sagittis vel. Etiam non molestie est. Maecenas auctor porttitor mauris, eu aliquet felis convallis quis.  
+//     `
+//   }
 ]
 
 let data_program = {

@@ -111,9 +111,9 @@
 
 		<div id='vue-app' class="container">
 			<div class="row">
-				<template v-for="item in article" v-if="item.id === 2">
+				<template v-for="item in article" v-if="item.id === 1">
 					<!-- setting id -->
-					<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="col-lg-4 offset-lg-4 text-center">
 						<div class="section-heading">
 							<h6>Artikel</h6>
 							<h2>{{item.title}}</h2>
@@ -129,7 +129,7 @@
 							<br><br>
 							<!-- custom textarea height -->
 							<textarea class="form-control"
-								style="height: 50vh;
+								style="height: 80vh;
 								background-color: transparent; border-color: transparent; text-align: justify; font-size: 12px; line-height: 200%;"
 								disabled>{{item.content}}</textarea>
 						</div>
@@ -142,7 +142,7 @@
 						<hr>
 
 						<ul class="article-list">
-							<template v-for="item in article.slice(0, 4)" v-if="item.id !== 2">
+							<template v-for="item in article.slice(0, 4)" v-if="item.id !== 1">
 								<li>
 									<a v-bind:href="'../'+item.link"><b>{{item.title}}</b></a>
 									<p>{{item.highlight}} </p>

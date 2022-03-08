@@ -1,6 +1,6 @@
 let data_article = [
   {
-    id: 3,
+    id: 2,
     type: "Berita",
     date: "08/10/2021",
     img: "rakorda-baznas.jpg",
@@ -13,7 +13,7 @@ let data_article = [
     `
   },
   {
-    id: 2,
+    id: 1,
     type: "Berita",
     date: "07/10/2021",
     img: "jumat-berkah.jpg",
@@ -23,19 +23,6 @@ let data_article = [
     author: "Andri",
     content: `\t\tAlhamdulillah… Pada hari Jum’at, 01 Oktober 2021 LAZ Ibadurrahman menggelar kegiatan Jumat Berkah di sekitar Jalan Mawar dan Jalan Hangtuah. Kegiatan “Jum’at Berkah” ini didukung oleh Muzakki LAZ Ibadurrahman & PIIMAU (Persatuan Ibu-Ibu Masjid Agung Ushuluddin). 
 \n\t\tKegiatan “Jum’at Berkah” merupakan agenda rutin yang senantiasa dilakukan setiap hari Jumat. Dimana LAZ Ibadurrahman menjadi jembatan para Muzakki LAZ Ibadurrahman dalam menebar senyum dhuafa dengan memborong dagangan UMKM,dan membagikannya di sekitar Jalan Mawar dan Jalan Hangtuah. Biaya operasional untuk kegiatan “Jumat Berkah” bersumber dari infak para donatur LAZ Ibadurrahman. Selain memborong UMKM, LAZ Ibadurrahman juga bekerjasama dengan PIIMAU membagikan 100 paket sembako kepada para dhuafa di Kecamatan Mandau, Bathin Solapan dan juga Pinggir.
-    `
-  },
-  {
-    id: 1,
-    type: "Berita",
-    date: "18/09/2021",
-    img: "beasiswa-anak-sekolah.jpg",
-    link: "beasiswa-anak-sekolah",
-    title: "Launching Beasiswa Anak Sekolah untuk Kecamatan Pinggir",
-    highlight: "Pada tanggal 30 September - 01 Oktober 2021 LAZ Ibadurrahman mengikuti RAKORDA BAZNAS SE - PROVINSI RIAU dengan tema",
-    author: "Andri",
-    content: `\t\tAlhamdulillah… Pada hari Kamis, 16 September 2021 telah dilaksanakan agenda “Launching Beasiswa Anak Sekolah untuk Kecamatan Pinggir” yang berlokasi di Masjid Nurul Iman Jalan Bahorok. Bantuan beasiswa ini diberikan kepada yang berhak menerimanya berkat kerjasama LAZ Ibadurrahman dengan Masjid Nurul Iman.
-\n\t\tBantuan tersebut langsung diberikan oleh Ketua Masjid Nurul Iman Budi Sofyan dan Manager Operasional LAZ Ibadurrahman Muhammad Hasbi Alhudri. Turut hadir bendahara Masjid Nurul Iman Bapak Kamari dan beberapa tokoh masyarakat Pinggir.
     `
   }
 ]

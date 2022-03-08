@@ -765,11 +765,8 @@ news
 }
 
 #news .table>tbody>tr>td>.img {
-	object-fit: cover;
-	width: 80vh; 
-	height: 20vh;
+	max-width: 40vh; 
 	border-radius: 5px;
-	margin-bottom: 10vh;
 }
 #news .page-item .page-link {
 	border: none;
