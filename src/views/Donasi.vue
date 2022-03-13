@@ -70,6 +70,7 @@
                   <md-icon>email</md-icon>
                   <label>Email...</label>
                   <md-input v-model="email" type="email"></md-input>
+                  <span class="md-suffix">@gmail.com</span>
                 </md-field>
                 <md-field class="validate">
                   <md-icon>phone</md-icon>
@@ -81,12 +82,13 @@
               <!-- right content -->
               <right slot="inputs-right">
                 <h6>pilihan donasi</h6>
-                <md-field class="validate">
-                  <md-icon>money</md-icon>
+                <md-field v-show="fullname.length"  class="validate">
+                  <!-- <md-icon>money</md-icon> -->
                   <label>Jumlah uang yang ingin didonasikan...</label>
+                  <span class="md-prefix"><b>Rp.</b></span>
                   <md-input v-model="amount"></md-input>
                 </md-field>
-                <md-field class="validate">
+                <md-field v-show="amount.length" class="validate">
                   <md-icon>dashboard</md-icon>
                   <md-select
                     md-dense
@@ -104,7 +106,7 @@
                     </md-option>
                   </md-select>
                 </md-field>
-                <md-field class="validate">
+                <md-field v-show="amount.length" class="validate">
                   <md-icon>list</md-icon>
                   <md-select
                     md-dense
@@ -158,7 +160,14 @@
                                 {{ called }}. {{ fullname }} donasi
                                 {{ donationType[selectionType] }} yang ditujukan
                                 untuk {{ selectionDetail }} dapat ditransfer
-                                sejumlah <b>Rp. {{ amount }}</b> melalui
+                                sejumlah
+                                <b>{{
+                                  Intl.NumberFormat("id-ID", {
+                                    style: "currency",
+                                    currency: "IDR",
+                                  }).format(amount)
+                                }}</b>
+                                melalui
                                 <b
                                   >Bank Mandiri -
                                   {{ donationPayment[selectionType][0].num }}
@@ -223,7 +232,17 @@
                                 {{ called }}. {{ fullname }} donasi
                                 {{ donationType[selectionType] }} yang ditujukan
                                 untuk {{ selectionDetail }} dapat ditransfer
-                                sejumlah <b>Rp. {{ amount }}</b> melalui
+                                sejumlah
+                                <b
+                                  >Rp.
+                                  {{
+                                    Intl.NumberFormat("id-ID", {
+                                      style: "currency",
+                                      currency: "IDR",
+                                    }).format(amount)
+                                  }}</b
+                                >
+                                melalui
                                 <b
                                   >Bank BSI -
                                   {{ donationPayment[selectionType][1].num }}
@@ -261,6 +280,7 @@
 
               <!-- submit button -->
               <md-button
+                :disabled="!amount.length"
                 slot="footer"
                 @click="showDialog = true"
                 class="md-simple md-success md-lg md-block"
@@ -343,11 +363,11 @@ export default {
       donationDetail: detail,
       donationPayment: payment,
       showDialog: false,
-      fullname: null,
-      email: null,
-      phone: null,
-      called: null,
-      amount: null,
+      fullname: "",
+      email: "",
+      phone: "",
+      called: "",
+      amount: "",
       selectionType: null,
       selectionDetail: null,
     };

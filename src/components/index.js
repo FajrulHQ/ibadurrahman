@@ -10,7 +10,7 @@ import Modal from "./Modal.vue";
 
 
 // Tables
-import SimpleTable from "./Tables/SimpleTable.vue";
+import SimpleTable from "./tables/SimpleTable.vue";
 
 export {
   DropDown,
