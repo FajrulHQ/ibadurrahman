@@ -37,9 +37,10 @@ Cara berkontribusi:
 - Minta akses github direpo ini
 - Clone Repository* - `git clone https://github.com/FajrulHQ/ibadurrahman.git` 
 - Make new branch* - `git branch -d <nama branch baru>`
-- Silahkan lakukan pengembangan
+- Silahkan lakukan perbaikan atau pengembangan
 - Kalau sudah sesuai dan tidak ada error build dist - `npm run build`
-- Commit hasil perubahan (pastikan tidak merusak file krusial) - `git commit -m <keterangan>`
+- Tambahkan perubahan (pastikan tidak merusak file krusial) - `git add .` 
+- Buat keterangan hasil perubahan - `git commit -m "<keterangan>"`
 - Push hasil nya ke github lalu pull request di repository - `git push -u origin <branch>`
 
   <small>*hanya untuk diawal saja, selanjutnya dapat dilewatkan dan gunakan branch yang telah dibuat</small>
@@ -59,17 +60,17 @@ Cara berkontribusi:
     ```
 2. Data terdiri dari rincian berikut.
 
-    | key           | type      | desc                                 |
-    |---------------| ----------|--------------------------------------|
-    | `id`          | `int`     |(urutan teratas yang terbesar)        |
-    | `type`        | `str`     |(LAZ atau LNW)                        |
-    | `date`        | `datetime`|(format: MM-DD-YYYY hh:mm:ss)         |
-    | `img`         | `str`     |(nama file image)                     |
-    | `link`        | `str`     |(router ke artikel)                   |
-    | `title`       | `str`     |(judul artikel)                       |
-    | `highlight`   | `str`     |(ringkasan artikel)                   |
-    | `author`      | `str`     |(nama penulis artikel)                |
-    | `content`     | `str`     |(isi konten)                          |
+    | key           | type      | desc                          |
+    |---------------| ----------|-----------------------------  |
+    | `id`          | `int`     |urutan teratas yang terbesar   |
+    | `type`        | `str`     |LAZ atau LNW                   |
+    | `date`        | `datetime`|format: MM-DD-YYYY hh:mm:ss    |
+    | `img`         | `str`     |nama file image                |
+    | `link`        | `str`     |router ke artikel              |
+    | `title`       | `str`     |judul artikel                  |
+    | `highlight`   | `str`     |ringkasan artikel              |
+    | `author`      | `str`     |nama penulis artikel           |
+    | `content`     | `str`     |isi konten                     |
 
 
 contoh:
