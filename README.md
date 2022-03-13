@@ -15,11 +15,12 @@ Ibadurrahman adalah lembaga zakat (LAZ atau Lembaga Amil Zakat) dan wakaf (LNW a
 
 ## Table of Contents
 
-- [LAZ [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Vue%20Material%20Kit%20-%20Material%20Design%20UI%20Kit%20for%20Vue.js%20https%3A//www.creative-tim.com/product/vue-material-kit%20%23vuejs%20%23ui%20%23kit%20%23vuematerial%20%40creativetim)](#laz-)
+- [Official Website LAZ Ibadurrahman](#official-website-laz-ibadurrahman)
+  - [Template by Vue Material KIT](#template-by-vue-material-kit)
   - [Table of Contents](#table-of-contents)
   - [Demo](#demo)
   - [Quick start](#quick-start)
-    - [Tutorial Menambah Article](#tutorial-menambah-artikel)
+    - [Tutorial menambah artikel](#tutorial-menambah-artikel)
   - [File Structure](#file-structure)
   - [Browser Support](#browser-support)
 
@@ -27,7 +28,7 @@ Ibadurrahman adalah lembaga zakat (LAZ atau Lembaga Amil Zakat) dan wakaf (LNW a
 
 | Landing Page | Donation Page | Articles Page  |
 | --- | --- | ---  |
-| [![Landing Page](./landing-page.png)](https://demos.creative-tim.com/vue-material-kit/#/login)  | [![Donation Page](./donation-page.png)](https://demos.creative-tim.com/vue-material-kit//landing)  | [![Articles Page](./articles-page.png)](https://demos.creative-tim.com/vue-material-kit/#/profile)
+| [![Landing Page](./landing-page.png)](https://laz.ibadurrahman.org/#/)  | [![Donation Page](./donation-page.png)](https://laz.ibadurrahman.org/#/donasi/vue-material-kit//landing)  | [![Articles Page](./articles-page.png)](https://laz.ibadurrahman.org/#/article/jumat-berkah)
 
 
 ## Quick start
