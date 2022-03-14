@@ -35,16 +35,18 @@ Ibadurrahman adalah lembaga zakat (LAZ atau Lembaga Amil Zakat) dan wakaf (LNW a
 
 Cara berkontribusi:
 
-- Minta akses github direpo ini
-- Clone Repository* - `git clone https://github.com/FajrulHQ/ibadurrahman.git` 
-- Make new branch* - `git branch -d <nama branch baru>`
+- *Pastikan sudah terinstal Node js, bisa download [disini](https://nodejs.org/en/download/)
+- *Clone Repository - `git clone https://github.com/FajrulHQ/ibadurrahman.git` 
+- *Make new branch - `git branch -d <nama branch baru>`
+- *Arahkan ke folder yang terdapat `package.json` lalu install module - `npm install`
+- Jalankan local server - `npm run serve`
 - Silahkan lakukan perbaikan atau pengembangan
 - Kalau sudah sesuai dan tidak ada error build dist - `npm run build`
 - Tambahkan perubahan (pastikan tidak merusak file krusial) - `git add .` 
 - Buat keterangan hasil perubahan - `git commit -m "<keterangan>"`
 - Push hasil nya ke github lalu pull request di repository - `git push -u origin <branch>`
 
-  <small>*hanya untuk diawal saja, selanjutnya dapat dilewatkan dan gunakan branch yang telah dibuat</small>
+  <small>*hanya untuk diawal saja, selanjutnya dapat dilewatkan</small>
 
 ### Tutorial menambah artikel
 1. Akses data json dan masukin file img di 

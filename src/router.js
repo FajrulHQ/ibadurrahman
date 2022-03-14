@@ -1,11 +1,13 @@
 import Vue from "vue";
 import Router from "vue-router";
+
 import Landing from "./views/Landing.vue";
 import Donasi from "./views/Donasi.vue";
 import Article from "./views/Article.vue";
+import Admin from "./views/Admin.vue";
+
 import MainNavbar from "./layout/MainNavbar.vue";
 import MainFooter from "./layout/MainFooter.vue";
-
 Vue.use(Router);
 
 export default new Router({
@@ -17,6 +19,14 @@ export default new Router({
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: "black" }
+      }
+    },
+    {
+      path: "/admin",
+      name: "admin",
+      components: { default: Admin, header: MainNavbar},
+      props: {
+        header: { colorOnScroll: 400 }
       }
     },
     {

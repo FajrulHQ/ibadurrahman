@@ -10,6 +10,9 @@
     <md-card-content>
       <slot name="description"></slot>
       <div class="md-layout">
+        <div class="md-layout-item md-medium-size-100 md-small-size-100">
+          <slot name="inputs-full"></slot>
+        </div>
         <div class="md-layout-item md-medium-size-50 md-small-size-100">
           <slot name="inputs-left"></slot>
         </div>
