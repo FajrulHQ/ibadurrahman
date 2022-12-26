@@ -3,7 +3,7 @@
     <md-table
       v-model="articles"
       md-sort="date"
-      md-sort-order="asc"
+      md-sort-order="desc"
       :table-header-color="tableHeaderColor"
     >
       <md-table-toolbar>
@@ -107,7 +107,7 @@ export default {
       currentPage: 0,
       pageSize: 2,
       allArticle: sourceArticle.sort(
-        (a, b) => new Date(a.date) - new Date(b.date)
+        (a, b) => new Date(b.date) - new Date(a.date)
       )
     };
   },
