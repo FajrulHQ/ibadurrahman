@@ -29,9 +29,7 @@
           </li>
         </ul>
       </nav> -->
-      <div class="copyright">
-        All right deserved &copy; {{ year }}
-      </div>
+      <div class="copyright">All right deserved &copy; {{ year }}</div>
     </div>
   </footer>
 </template>

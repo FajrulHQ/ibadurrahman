@@ -1,3 +1,4 @@
+/* eslint-disable */
 import DropDown from "./Dropdown.vue";
 import Parallax from "./Parallax.vue";
 import Pagination from "./Pagination.vue";

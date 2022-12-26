@@ -82,7 +82,7 @@
               <!-- right content -->
               <right slot="inputs-right">
                 <h6>pilihan donasi</h6>
-                <md-field v-show="fullname.length"  class="validate">
+                <md-field v-show="fullname.length" class="validate">
                   <!-- <md-icon>money</md-icon> -->
                   <label>Jumlah uang yang ingin didonasikan...</label>
                   <span class="md-prefix"><b>Rp.</b></span>
@@ -164,7 +164,7 @@
                                 <b>{{
                                   Intl.NumberFormat("id-ID", {
                                     style: "currency",
-                                    currency: "IDR",
+                                    currency: "IDR"
                                   }).format(amount)
                                 }}</b>
                                 melalui
@@ -180,12 +180,12 @@
                               class="md-simple md-block md-success"
                               :href="
                                 'https://api.whatsapp.com/send?phone=6281275753275&text=Assalamualaikum wr.wb, saya ' +
-                                fullname +
-                                ' ingin mengkonfirmasi terkait donasi ' +
-                                donationType[selectionType] +
-                                ' sejumlah Rp. ' +
-                                amount +
-                                ', berikut bukti transfer saya ke rekening Mandiri LAZ Ibadurrahman.'
+                                  fullname +
+                                  ' ingin mengkonfirmasi terkait donasi ' +
+                                  donationType[selectionType] +
+                                  ' sejumlah Rp. ' +
+                                  amount +
+                                  ', berikut bukti transfer saya ke rekening Mandiri LAZ Ibadurrahman.'
                               "
                               ><md-icon>whatsapp</md-icon> konfirmasi melalui
                               whatsapp</md-button
@@ -238,7 +238,7 @@
                                   {{
                                     Intl.NumberFormat("id-ID", {
                                       style: "currency",
-                                      currency: "IDR",
+                                      currency: "IDR"
                                     }).format(amount)
                                   }}</b
                                 >
@@ -254,12 +254,12 @@
                               class="md-simple md-block md-success"
                               :href="
                                 'https://api.whatsapp.com/send?phone=6281275753275&text=Assalamualaikum wr.wb, saya ' +
-                                fullname +
-                                ' ingin mengkonfirmasi terkait donasi ' +
-                                donationType[selectionType] +
-                                ' sejumlah Rp. ' +
-                                amount +
-                                ', berikut bukti transfer saya ke rekening BSI LAZ Ibadurrahman.'
+                                  fullname +
+                                  ' ingin mengkonfirmasi terkait donasi ' +
+                                  donationType[selectionType] +
+                                  ' sejumlah Rp. ' +
+                                  amount +
+                                  ', berikut bukti transfer saya ke rekening BSI LAZ Ibadurrahman.'
                               "
                               ><md-icon>whatsapp</md-icon> konfirmasi melalui
                               whatsapp</md-button
@@ -309,7 +309,7 @@ let detail = [
     "Zakat Emas dan Perak",
     "Zakat Investasi",
     "Zakat Tabungan",
-    "Zakat Rikaz",
+    "Zakat Rikaz"
   ],
   ["Shadaqah", "Bantuan Kemanusiaan", "Bantuan Berupa Barang"],
   ["DDS"],
@@ -327,34 +327,34 @@ let detail = [
     "Laundry LNW",
     "Depot Air Minum AMI",
     "Renovasi rumah Singgah Pekanbaru",
-    "Alqur'an dan Iqro'",
+    "Alqur'an dan Iqro'"
   ],
-  ["Rumah Yatim"],
+  ["Rumah Yatim"]
 ];
 let payment = [
   [
     { name: "Mandiri", num: "172-00-0029905-9", img: "mandiri.png" },
-    { name: "BSI", num: "7099887782", img: "bsi.png" },
+    { name: "BSI", num: "7099887782", img: "bsi.png" }
   ],
   [
     { name: "Mandiri", num: "172-00-0029903-4", img: "mandiri.png" },
-    { name: "BSI", num: "7099887798", img: "bsi.png" },
+    { name: "BSI", num: "7099887798", img: "bsi.png" }
   ],
   [{ name: "Mandiri", num: "172-00-0029900-0", img: "mandiri.png" }],
   [
     { name: "Mandiri", num: "172-00-0029896-0", img: "mandiri.png" },
-    { name: "BSI", num: "7099885593", img: "bsi.png" },
+    { name: "BSI", num: "7099885593", img: "bsi.png" }
   ],
   [
     { name: "Mandiri", num: "172-00-0029896-0", img: "mandiri.png" },
-    { name: "BSI", num: "7099885593", img: "bsi.png" },
-  ],
+    { name: "BSI", num: "7099885593", img: "bsi.png" }
+  ]
 ];
 
 export default {
   components: {
     LoginCard,
-    Tabs,
+    Tabs
   },
   bodyClass: "login-page",
   data() {
@@ -369,30 +369,30 @@ export default {
       called: "",
       amount: "",
       selectionType: null,
-      selectionDetail: null,
+      selectionDetail: null
     };
   },
   props: {
     header: {
       type: String,
-      default: require("@/assets/img/bg2.jpg"),
+      default: require("@/assets/img/bg2.jpg")
     },
     bsi: {
       type: String,
-      default: require("@/assets/img/payment/bsi.png"),
+      default: require("@/assets/img/payment/bsi.png")
     },
     mandiri: {
       type: String,
-      default: require("@/assets/img/payment/mandiri.png"),
-    },
+      default: require("@/assets/img/payment/mandiri.png")
+    }
   },
   computed: {
     headerStyle() {
       return {
-        backgroundImage: `url(${this.header})`,
+        backgroundImage: `url(${this.header})`
       };
-    },
-  },
+    }
+  }
 };
 </script>
 

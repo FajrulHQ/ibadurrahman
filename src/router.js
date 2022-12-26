@@ -24,7 +24,7 @@ export default new Router({
     {
       path: "/admin",
       name: "admin",
-      components: { default: Admin, header: MainNavbar},
+      components: { default: Admin, header: MainNavbar },
       props: {
         header: { colorOnScroll: 400 }
       }
@@ -40,7 +40,7 @@ export default new Router({
     {
       path: "/article/:id",
       name: "article",
-      components: { default: Article, header: MainNavbar, footer: MainFooter},
+      components: { default: Article, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: "black" }

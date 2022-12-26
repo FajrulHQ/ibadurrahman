@@ -50,7 +50,7 @@
 
           <div class="section text-center" :id="article.link">
             <h2 class="md-title text-success">______________</h2>
-            <br/><br/><br/><br/>
+            <br /><br /><br /><br />
             <small class="md-body-1"
               >Ga cuma itu, ada informasi lainnya juga lhoo..</small
             >
@@ -107,32 +107,32 @@ export default {
   data() {
     return {
       moment: moment,
-      allArticle: sourceArticle,
+      allArticle: sourceArticle
     };
   },
   props: {
     header: {
       type: String,
-      default: require("@/assets/img/bg.jpg"),
-    },
+      default: require("@/assets/img/bg.jpg")
+    }
   },
   computed: {
     headerStyle() {
       return {
-        backgroundImage: `url(${this.header})`,
+        backgroundImage: `url(${this.header})`
       };
     },
     article() {
       return sourceArticle.find(
-        (article) => article.link === this.$route.params.id
+        article => article.link === this.$route.params.id
       );
     },
     filteredArticle() {
       return this.allArticle.filter(
-        (content) => content.link !== this.$route.params.id
+        content => content.link !== this.$route.params.id
       );
-    },
-  },
+    }
+  }
 };
 </script>
 

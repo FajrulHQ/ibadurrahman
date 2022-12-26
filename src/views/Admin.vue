@@ -58,7 +58,9 @@
           <div class="md-layout-item md-size-80 mx-auto md-small-size-100">
             <div class="section text-center">
               <h2 class="md-title text-success ">Admin Page</h2>
-              <small class="md-body-1">Dashboard yang hanya bisa diakses oleh admin</small>
+              <small class="md-body-1"
+                >Dashboard yang hanya bisa diakses oleh admin</small
+              >
             </div>
           </div>
         </div>
@@ -72,7 +74,7 @@ import { LoginCard } from "@/components";
 
 export default {
   components: {
-    LoginCard,
+    LoginCard
     // Tabs,
   },
   data() {
@@ -80,29 +82,28 @@ export default {
       id: null,
       pass: null,
       account: [{ id: "admin", pass: "admin" }],
-      checkLogin: false,
+      checkLogin: false
     };
   },
   props: {
     header: {
       type: String,
-      default: require("@/assets/img/bg4.jpg"),
-    },
+      default: require("@/assets/img/bg4.jpg")
+    }
   },
   computed: {
     headerStyle() {
       return {
-        backgroundImage: `url(${this.header})`,
+        backgroundImage: `url(${this.header})`
       };
     },
     isExist() {
       return this.account.some(
-        (item) => (item.id !== this.id) | (item.pass !== this.pass)
+        item => (item.id !== this.id) | (item.pass !== this.pass)
       );
-    },
-  },
+    }
+  }
 };
 </script>
 
-<style>
-</style>
+<style></style>

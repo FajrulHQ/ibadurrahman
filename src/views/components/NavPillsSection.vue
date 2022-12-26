@@ -15,14 +15,14 @@
                   'Sosial',
                   'Pemberdayaan',
                   'Dakwah',
-                  'Kesehatan',
+                  'Kesehatan'
                 ]"
                 :tab-icon="[
                   'school',
                   'connect_without_contact',
                   'sports_kabaddi',
                   'favorite',
-                  'health_and_safety',
+                  'health_and_safety'
                 ]"
                 plain
                 flex-column
@@ -113,7 +113,7 @@
                   'school',
                   'connect_without_contact',
                   'stacked_bar_chart',
-                  'favorite',
+                  'favorite'
                 ]"
                 plain
                 flex-column
@@ -182,21 +182,20 @@
   </div>
 </template>
 
-
 <script>
 import { Tabs } from "@/components";
-import sourceProgram from "@/static/program.json"
+import sourceProgram from "@/static/program.json";
 
 export default {
   components: {
-    Tabs,
+    Tabs
   },
   data() {
     return {
       LAZprogram: sourceProgram.laz,
-      LNWprogram: sourceProgram.lnw,
+      LNWprogram: sourceProgram.lnw
     };
-  },
+  }
 };
 </script>
 

@@ -21,7 +21,6 @@
       </div>
     </parallax>
     <div class="main main-raised">
-      
       <div class="section text-center" id="article">
         <h2 class="md-title text-success">Artikel</h2>
         <small class="md-body-1">Ada info apa ni di Ibadurrahman</small>
@@ -194,45 +193,45 @@ import { SimpleTable } from "@/components";
 export default {
   components: {
     NavPills,
-    SimpleTable,
+    SimpleTable
   },
   bodyClass: "landing-page",
   props: {
     header: {
       type: String,
-      default: require("@/assets/img/bg3.jpg"),
+      default: require("@/assets/img/bg3.jpg")
     },
     geraiImg1: {
       type: String,
-      default: require("@/assets/img/faces/gerai-batin-solapan.jpg"),
+      default: require("@/assets/img/faces/gerai-batin-solapan.jpg")
     },
     geraiImg2: {
       type: String,
-      default: require("@/assets/img/faces/gerai-pinggir.jpg"),
+      default: require("@/assets/img/faces/gerai-pinggir.jpg")
     },
     geraiImg3: {
       type: String,
-      default: require("@/assets/img/faces/gerai-srewangi.jpg"),
+      default: require("@/assets/img/faces/gerai-srewangi.jpg")
     },
     geraiImg4: {
       type: String,
-      default: require("@/assets/img/faces/gerai-sukamaju.jpg"),
-    },
+      default: require("@/assets/img/faces/gerai-sukamaju.jpg")
+    }
   },
   data() {
     return {
       name: null,
       email: null,
-      message: null,
+      message: null
     };
   },
   computed: {
     headerStyle() {
       return {
-        backgroundImage: `url(${this.header})`,
+        backgroundImage: `url(${this.header})`
       };
-    },
-  },
+    }
+  }
 };
 </script>
 
